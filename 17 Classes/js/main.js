@@ -1,12 +1,13 @@
 // Javascript Classes
 
 class Pizza {
-    constructor() {
-        this.size = "medium";
+    constructor(pizzaType, pizzaSize) {
+        this.type = pizzaType;
+        this.size = pizzaSize;
         this.crust = "original";
     }
     bake() {
-        console.log(`Baking a ${this.size} ${this.crust} crust Pizza!`)
+        console.log(`Baking a ${this.size} ${this.crust} ${this.type} crust Pizza!`)
     }
 }
 
@@ -14,5 +15,5 @@ class Pizza {
 // console.log(Pizza.bake());   Uncaught TypeError: Pizza.bake is not a function!
 // console.log(Pizza.bake);     Undefined!
 
-const myPizza = new Pizza();
+const myPizza = new Pizza("pepperoni", "huge");
 myPizza.bake();
