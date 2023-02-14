@@ -7,7 +7,7 @@ class Pizza {
         this.crust = "original";
     }
     bake() {
-        console.log(`Baking a ${this.size} ${this.crust} ${this.type} crust Pizza!`)
+        console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust Pizza!`)
     }
 }
 
@@ -16,4 +16,7 @@ class Pizza {
 // console.log(Pizza.bake);     Undefined!
 
 const myPizza = new Pizza("pepperoni", "huge");
+myPizza.type = "supreme";
 myPizza.bake();
+
+console.log(myPizza.type);
