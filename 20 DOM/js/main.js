@@ -34,3 +34,22 @@ for (let i = 0; i < evenDivs.length; i++) {
     evenDivs[i].style.width = "200px";
     evenDivs[i].style.height = "200px";
 }
+
+
+const navText = document.querySelector("nav h1");
+console.log(navText);
+navText.textContent = "Changing the NAV H1";
+
+const navBar = document.querySelector("nav");
+navBar.innerHTML = `<h1>Hello!</h1> <p>This should align right</p>`;
+console.log(navBar);
+
+navBar.style.justifyContent = "flex-start";
+navBar.style.justifyContent = "flex-end";
+navBar.style.justifyContent = "space-evenly";
+navBar.style.justifyContent = "space-between";
+
+console.log(evenDivs);
+console.log(evenDivs[0]);
+console.log(evenDivs[0].parentElement);
+console.log(evenDivs[0].parentElement.children);
