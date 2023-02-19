@@ -76,8 +76,24 @@ console.log(view2.lastChild);
 console.log(view2.firstChild);
 console.log(view2.children);
 
-// removing elements:
+// removing & creating elements 
 while (view2.lastChild) {
     view2.lastChild.remove();
 }
 
+const createDivs = (parent, iter) => {
+    const newDiv = document.createElement("div");
+    newDiv.textContent = iter;
+    newDiv.style.backgroundColor = "#000";
+    newDiv.style.width = "500px";
+    newDiv.style.height = "500px";
+    newDiv.style.margin = "10px";
+    newDiv.style.display = "flex";
+    newDiv.style.justifyContent = "center";
+    newDiv.style.alignItems = "center";
+    newDiv.style.fontSize = "5rem";
+    newDiv.style.color = "#ff0";
+    parent.append(newDiv);
+}
+
+createDivs(view2, 10);
