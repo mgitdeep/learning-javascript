@@ -85,8 +85,8 @@ const createDivs = (parent, iter) => {
     const newDiv = document.createElement("div");
     newDiv.textContent = iter;
     newDiv.style.backgroundColor = "#000";
-    newDiv.style.width = "500px";
-    newDiv.style.height = "500px";
+    newDiv.style.width = "300px";
+    newDiv.style.height = "300px";
     newDiv.style.margin = "10px";
     newDiv.style.display = "flex";
     newDiv.style.justifyContent = "center";
@@ -96,4 +96,8 @@ const createDivs = (parent, iter) => {
     parent.append(newDiv);
 }
 
-createDivs(view2, 10);
+// createDivs(view2, 10);
+
+for ( i = 1; i <= 12; i++) {
+    createDivs(view2, i);
+}
