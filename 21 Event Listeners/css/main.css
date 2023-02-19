@@ -43,7 +43,8 @@ main {
     align-items: center;
     background-color: #708090;
     border: 1px solid #000;
-    width: 100%;
+    width: 600px;
+    height: 600px;
 }
 
 .height100 {
@@ -161,7 +162,7 @@ and display:flex for the example you want to see. */
     display: none;
     color: #fff;
     max-width: 400px;
-    max-height: 60%;
+    max-height: 400px;
     padding-top: 0;
 }
 
