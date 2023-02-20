@@ -61,15 +61,26 @@ const initApp = () => {
     // }, false);
 
     view.addEventListener("click", (event) => {
-        view.classList.add("purple");
-        view.classList.remove("darkblue");
+        view.classList.toggle("purple");
+        view.classList.toggle("darkblue");
     }, false);
 
     div.addEventListener("click", (event) => {
-        div.style.backgroundColor = "blue";
+        div.classList.toggle("blue");
+        div.classList.toggle("black");
+        // div.style.backgroundColor = "blue";                     
+        // div.style.backgroundColor = "purple";
+        // div.style.toggle.backgroundColor = "blue";                   TOGGLE won't work here!!
+        // div.style.toggle.backgroundColor = "purple";
     }, false);
 
     h2.addEventListener("click", (event) => {
-        event.target.textContent = "Clicked!";
+        const myText = event.target.textContent;
+        myText === "My 2nd view" ? (event.target.textContent = "Clicked") : (event.target.textContent = "My 2nd view");
+        // event.target.textContent = "Clicked!";
+        // event.target.textContent = "Again Clicked!";
+        // event.toggle.target.textContent = "Clicked!";                TOGGLE won't work here!!
+        // event.toggle.target.textContent = "Again Clicked!";
+        
     }, false);
 }
