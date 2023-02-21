@@ -1,5 +1,7 @@
 // Modules
-
+// view1.style.display = "none";
+// view2.style.display = "none";
+// view3.style.display = "none";
 // import playGuitar from "./guitars.js";
 // import { shredding as shred, plucking as fingurepicking } from "./guitars.js";
 
