@@ -1,6 +1,6 @@
 // This JSON Data taken from: https://jsonplaceholder.typicode.com/posts
 
-[
+export const posts = [
     {
       "userId": 1,
       "id": 1,
