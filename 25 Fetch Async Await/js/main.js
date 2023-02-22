@@ -17,16 +17,27 @@
 //     });
 // });
 
-
 // Promise
-const myPromise = new Promise((resolve, reject) => {
-    const error = false;
+// const myPromise = new Promise((resolve, reject) => {
+//   const error = false;
 
-    if (!error) {
-        resolve("Yes! resolved the promise");
-    } else {
-        reject("No! rejected the promise");
-    }
-})
+//   if (!error) {
+//     resolve("Yes! resolved the promise");
+//   } else {
+//     reject("No! rejected the promise");
+//   }
+// });
 
-console.log(myPromise);
+// console.log(myPromise);
+
+
+const users = fetch("https://jsonplaceholder.typicode.com/users");
+
+// pending
+console.log(users);
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(Response => {
+        console.log(Response);
+        return Response.json();
+    })
