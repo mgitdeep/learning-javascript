@@ -20,3 +20,17 @@ const filteredPosts = posts.filter((post) => {
 });
 
 console.log(filteredPosts);
+
+// 3rd HOF
+const mappedPosts = filteredPosts.map((post) => {
+    return post.id * 10;
+})
+
+console.log(mappedPosts);
+
+// Last HOF
+const reducedPostsValue = mappedPosts.reduce((sum, pos) => {
+    return sum + pos;
+});
+
+console.log(reducedPostsValue);
