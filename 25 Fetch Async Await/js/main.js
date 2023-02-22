@@ -31,13 +31,19 @@
 // console.log(myPromise);
 
 
-const users = fetch("https://jsonplaceholder.typicode.com/users");
+// const users = fetch("https://jsonplaceholder.typicode.com/users");
 
-// pending
-console.log(users);
+// // pending
+// console.log(users);
 
 fetch("https://jsonplaceholder.typicode.com/users")
-    .then(Response => {
-        console.log(Response);
-        return Response.json();
+    .then((responssssse) => {
+        // console.log(response);
+        return responssssse.json();
     })
+    .then((data) => {
+        console.log(data);
+        data.forEach((userrrr) => {
+            console.log(userrrr);
+        })
+    });
