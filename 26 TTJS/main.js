@@ -127,8 +127,53 @@
 // })
 
 
-let myFriends = ['vinod', 'ramesh', 'arjun', 'vishal', 'arjun'];
+// let myFriends = ['vinod', 'ramesh', 'arjun', 'vishal', 'arjun'];
 
-console.log(myFriends.lastIndexOf("arjun", 3));
-console.log(myFriends.lastIndexOf("arjun", 90));
-console.log(myFriends.lastIndexOf("Arjun", 4));
+// console.log(myFriends.lastIndexOf("arjun", 3));
+// console.log(myFriends.lastIndexOf("arjun", 90));
+// console.log(myFriends.lastIndexOf("Arjun", 4));
+
+// let num = 15;
+// let newNum = num++ + 1 + num++;		
+
+// console.log(num);		
+// console.log(newNum);
+
+// let myFriends = ['vinod', 'ramesh', 'arjun', 'vishal', 'arjun'];
+
+// myFriends.forEach(function callbackFunc(element, index, array) {
+//     console.log(element);
+//     console.log(index);
+//     console.log(array);
+// })
+
+// console.log(myFriends.includes("ramesh", 3));
+
+// const prices = [240, 330, 360, 420, 510, 600, 660, 900];
+
+// // const findElem = prices.find((element) => element>500);
+
+// const findElem = prices.findIndex((element) => element>500);
+
+// console.log(findElem);
+
+// const prices = [240, 330, 360, 420, 510, 600, 660, 900];
+
+// const newPrice = prices.filter((element, index) => {
+//     // return ("Here are the prices: ", element < 500);
+//     // console.log("Here are the prices: ", element < 500)
+//     return prices[element];
+// });
+// // console.log(element)
+// console.log(newPrice);
+// // newPrice();
+
+
+// const months = ['March', 'Jan', 'Feb', 'April' , 'Dec', 'Nov'];
+
+// console.log(months.sort());
+
+// const array1 = [1, 30, 4, 21, 100000, 99];
+// console.log(array1.sort());
+
+
