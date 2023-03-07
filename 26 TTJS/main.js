@@ -207,11 +207,103 @@
 
 
 
-const array1 = [1, 4, 9, 16, 25];
+// const prices = [240, 330, 360, 420, 510, 600, 660, 900];
 
-const newArray = array1.map((element, index, array) => {
-    return element > 9;
-});
+// const newPrice = prices.filter((element, index, array) => {
+//     // return ("Here are the prices: ", element > 500);
+//     console.log("Here are the prices: ", element > 500)
+//     // console.log(element);
+//     // console.log(index);
+//     // console.log(array);
+//     // return element > 500;
+//     // console.log(element > 500);
+// });
 
-console.log(array1);
-console.log(newArray);
+// console.log(newPrice);
+// newPrice();
+// console.log(newPrice);
+
+
+
+
+// const array1 = [1, 4, 9, 16, 25];
+
+// const newArray = array1.map((element, index, array) => {
+//     // return element > 9;
+    
+//     // console.log(array);
+//     // console.log(index);
+//     return `${element} has index number: ${index} belongs to ${array}`;
+// });
+
+// // console.log(array1);
+// console.log(newArray);
+
+
+
+// let myFriends = ['vinod', 'ramesh', 'arjun', 'vishal'];
+
+// const allF = myFriends.forEach(function(element, index, array) {
+//     console.log(element);
+//     console.log(index);
+//     console.log(array);
+//     return element, index;
+// })
+
+// console.log(allF)
+
+
+// const prices = [240, 330, 360, 420, 510, 600, 660, 900];
+
+// const newPrice = prices.filter((element, index, array) => {
+//     // console.log(element);
+//     // console.log(index);
+//     // console.log(array);
+//     return element > 500;
+// });
+
+// console.log(newPrice);
+
+
+// const array1 = [1, 4, 9, 16, 25];
+
+// const newArray = array1.map((element, index, array) => {
+//     // console.log(element);
+//     // console.log(index);
+//     // console.log(array);
+//     return element;
+// });
+
+// console.log(newArray);
+
+
+// let arr = [25, 36, 49, 64, 81];
+
+// // const sqrt = arr.forEach((curElm) => {
+// //     console.log(Math.sqrt(curElm));
+// // })
+
+// // const sqrt = arr.filter((curElm) => {
+// //     console.log(Math.sqrt(curElm));
+// // })
+
+// const sqrt = arr.map((curElm) => {
+//     return Math.sqrt(curElm);
+// })
+
+// console.log(sqrt)
+
+
+// Multiply each element by 2 and return only those elements which are greater than 10?
+
+let arr = [2, 3, 4, 6, 8];
+
+const mulArr = arr.map((curElm) => {
+    // console.log(curElm);
+    return curElm * 2;
+}).filter((elem) => {
+    // console.log(elem);
+    return elem > 10;
+})
+
+console.log(mulArr)
