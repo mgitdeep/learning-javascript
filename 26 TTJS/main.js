@@ -296,14 +296,24 @@
 
 // Multiply each element by 2 and return only those elements which are greater than 10?
 
-let arr = [2, 3, 4, 6, 8];
+// let arr = [2, 3, 4, 6, 8];
 
-const mulArr = arr.map((curElm) => {
-    // console.log(curElm);
-    return curElm * 2;
-}).filter((elem) => {
-    // console.log(elem);
-    return elem > 10;
-})
+// const mulArr = arr.map((curElm) => {
+//     // console.log(curElm);
+//     return curElm * 2;
+// }).filter((elem) => {
+//     // console.log(elem);
+//     return elem > 10;
+// })
 
-console.log(mulArr)
+// console.log(mulArr)
+
+
+let arr = [3, 6, 9];
+
+const addArr = arr.reduce((accumulator, curElm) => {
+    // debugger
+    return accumulator = accumulator + curElm;
+}, 9)
+
+console.log(addArr);
