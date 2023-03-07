@@ -177,3 +177,41 @@
 // console.log(array1.sort());
 
 
+// const animals = ['pigs', 'goats', 'sheep'];
+
+// animals.push('chicken');
+// console.log(animals);
+
+// const plants = ['broccoli', 'cauliflower',  'kale', 'tomato', 'cabbage'];
+
+// console.log(plants);
+// console.log(plants.pop());
+// console.log(plants);
+
+// const firm = plants.pop()
+
+// console.log(firm)
+// console.log(plants)
+
+
+// const months = ['Jan', 'march', 'April', 'June', 'July'];
+
+// const updateMonth = months.indexOf('march')
+
+// if (updateMonth != -1) {
+//     const newMonth = months.splice( updateMonth, 1, "March");
+//     console.log(months);
+// } else {
+//     console.log('No such item')
+// }
+
+
+
+const array1 = [1, 4, 9, 16, 25];
+
+const newArray = array1.map((element, index, array) => {
+    return element > 9;
+});
+
+console.log(array1);
+console.log(newArray);
