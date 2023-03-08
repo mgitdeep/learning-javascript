@@ -456,8 +456,72 @@
 // console.log(str.charCodeAt(lastChar));
 
 
-Property Access
-ECMAScript 5 (2009) allows property access [ ] on strings
+// Property Access
+// ECMAScript 5 (2009) allows property access [ ] on strings
 
-var str = "HELLO WORLD";
-console.log(str[1]);
+// var str = "HELLO WORLD";
+// console.log(str[1]);
+
+
+
+// 👉  Other useful methods 
+
+// let myName = "vinod tHapa";
+// console.log(myName.toUpperCase()); 
+// console.log(myName.toLowerCase());
+
+
+// The concat() Method 
+// concat() joins two or more strings
+
+// let fName = "vinod"
+// let lName = "thapa"
+
+// console.log(fName + lName );
+// console.log(`${fName} ${lName}`);
+// console.log(fName.concat(lName));
+// console.log(fName.concat(" " ,lName));
+
+
+// String.trim()
+// The trim() method removes whitespace from both 
+// sides of a string
+
+// var str = "              Hello         World!            ";
+// console.log(str.trim());
+
+
+// Converting a String to an Array
+// A string can be converted to an array with the 
+// split() method
+
+// var txt = "a, b,c d,e";   // String
+// console.log(txt.split(","));           // Split on commas
+// console.log( txt.split(" "));          // Split on spaces
+// console.log(txt.split("|"));         // Split on pipe
+
+
+// JavaScript Date objects represent a single moment in time in a 
+// platform-independent format. Date objects contain a Number 
+// that represents milliseconds since 1 January 1970 UTC.
+
+// Creating Date Objects
+// There are 4 ways to create a new date object:
+
+// new Date()
+// new Date(year, month, day, hours, minutes, seconds, milliseconds)
+// // it takes 7 arguments
+// new Date(milliseconds)
+// // we cannot avoid month section 
+// new Date(date string)
+
+
+// new Date() 
+// Date objects are created with the new Date() constructor.
+
+let currDate = new Date(); 
+console.log(currDate);
+
+console.log(new Date());
+console.log(new Date().toLocaleString()); // 9/11/2019, 1:25:01 PM
+console.log(new Date().toString()); // Wed Sep 11 2019 13:25:01 GMT+0700 (GMT+07:00)
