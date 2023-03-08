@@ -519,9 +519,17 @@
 // new Date() 
 // Date objects are created with the new Date() constructor.
 
-let currDate = new Date(); 
-console.log(currDate);
+// let currDate = new Date(); 
+// console.log(currDate);
 
-console.log(new Date());
-console.log(new Date().toLocaleString()); // 9/11/2019, 1:25:01 PM
-console.log(new Date().toString()); // Wed Sep 11 2019 13:25:01 GMT+0700 (GMT+07:00)
+// console.log(new Date());
+// console.log(new Date().toLocaleString()); // 9/11/2019, 1:25:01 PM
+// console.log(new Date().toString()); // Wed Sep 11 2019 13:25:01 GMT+0700 (GMT+07:00)
+
+
+// Date.now()
+// Returns the numeric value corresponding to the current time—the number 
+// of milliseconds elapsed since January 1, 1970 00:00:00 UTC
+
+
+console.log(Date.now());
