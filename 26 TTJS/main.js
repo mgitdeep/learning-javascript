@@ -309,11 +309,155 @@
 // console.log(mulArr)
 
 
-let arr = [3, 6, 9];
+// let arr = [3, 6, 9];
 
-const addArr = arr.reduce((accumulator, curElm) => {
-    // debugger
-    return accumulator = accumulator + curElm;
-}, 9)
+// const addArr = arr.reduce((accumulator, curElm) => {
+//     // debugger
+//     return accumulator = accumulator + curElm;
+// }, 9)
 
-console.log(addArr);
+// console.log(addArr);
+
+// let anySentence = "We are the so-called \"Vikings\" from the north.";
+// console.log(anySentence);
+
+// let anySentence1 = 'We are the so-called "Vikings" from the north.'
+// console.log(anySentence1);
+
+// const myBioData =  'I am the thapa Technical';
+// console.log(myBioData.indexOf("t", 6));
+
+
+// const myBioData =  'I am the thapa Technical';
+// let sData = myBioData.search("Technical");
+// console.log(sData);
+
+
+// slice() extracts a part of a string and returns the extracted part 
+// in a new string.
+
+// The method takes 2 parameters: the start position, 
+// and the end position (end not included).
+
+// var str = "Apple, Bananaa, Kiwi, mango";
+
+// let res = str.slice(0,4);
+// let res = str.slice(7);
+// console.log(res);
+
+
+// The slice() method selects the elements starting at the 
+// given start argument, and ends at, but does not include, 
+// the given end argument.
+
+// Note: The original array will not be changed.
+
+// Display only 280 characters of a string like the 
+// one used in Twitter?
+
+// const str = "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore veritatis culpa accusamus ullam quibusdam illo dolor debitis incidunt repellat error assumenda exercitationem qui aliquid quisquam, deserunt ab, adipisci minus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi dolore veritatis culpa accusamus ullam quibusdam illo dolor debitis incidunt repellat error assumenda exercitationem qui aliquid quisquam, deserunt ab, adipisci minus!" 
+
+// // let strLim = str.charAt(280);
+// // let strLim = str.indexOf('sit', 150);
+// let strLim = str.slice(0, 280);
+
+// console.log(strLim);
+// console.log(strLim.length);
+
+
+// substring() is similar to slice().
+
+// The difference is that substring() cannot accept 
+// negative indexes.
+
+// var str = "Apple, Bananaa, Kiwi";
+// let res = str.substring(8,-2);
+// console.log(res);
+
+
+
+// If we give negative value then the characters are
+//  counted from the 0th pos 
+
+// substr() is similar to slice().
+
+// The difference is that the second parameter specifies the 
+// length of the extracted part.
+
+
+// var str = "Apple, Bananaa, Kiwi";
+// // let res = str.substr(7,-2);
+// let res = str.substr(-4);
+// console.log(res);
+
+
+
+// The replace() method replaces a specified value 
+// with another value in a string.
+
+// let myBioData = `I am vinod bahadur thapa vinod`;
+
+// let repalceData = myBioData.replace('Vinod','VINOD');
+// console.log(repalceData);
+// console.log(myBioData);
+
+
+// Points to remember 
+// 1: The replace() method does not change the string 
+// it is called on.  It returns a new string.
+// 2: By default, the replace() method replaces only 
+// the first match
+// 3:By default, the replace() method is case sensitive. 
+// Writing VINOD (with upper-case) will not work
+
+
+// There are 3 methods for extracting string characters:
+
+// charAt(position)
+// charCodeAt(position)
+// Property access [ ]
+
+
+
+// The charAt() Method 🙋‍♂️
+// The charAt() method returns the character at a 
+// specified index (position) in a string
+
+// let str = "HELLO WORLD";
+
+// console.log(str.charAt(9));
+
+
+
+// The charCodeAt() method returns the unicode of the 
+// character at a specified index in a string:
+
+// The method returns a UTF-16 code
+//  (an integer between 0 and 65535).
+
+// The Unicode Standard provides a unique number for every 
+// character, no matter the platform, device, application, 
+// or language. UTF-8 is a popular Unicode encoding which
+//  has 88-bit code units.
+
+
+
+// var str = "HELLO WORLD";
+
+// console.log( str.charCodeAt(0) );
+
+
+// 😀12: challenge Time 🏁
+
+// Return the Unicode of the last character in a string
+
+// let str = "HELLO WORLD";
+// let lastChar = str.length - 1;
+// console.log(str.charCodeAt(lastChar));
+
+
+Property Access
+ECMAScript 5 (2009) allows property access [ ] on strings
+
+var str = "HELLO WORLD";
+console.log(str[1]);
