@@ -574,3 +574,30 @@
 //   list of the direct children only 
 // 5: document.children (without text nodes, only regular Elements)
 // 6: document.childNodes.length
+
+
+// Practice Time 
+// How to find the child in DOM tree 
+// firstChild vs firstElementChild
+// lastChild vs lastElementChild 
+// const data = document.body.firstElementChild;
+// undefined
+
+
+// 4 ways of writing Events in JavaScript
+
+// 1: using inline events alert();
+// 2: By Calling a funcion (We already seen and most common way of writing) 
+// 3: using Inline events (HTML onclick="" property and element.onclick)
+// 4: using Event Listeners (addEventListener and IE's attachEvent)
+
+const thirdWay = document. getElementById('thirdway');
+    thirdWay.onclick = function() {
+        alert('most common way of writing functions again');
+ }
+
+ 
+
+
+
+

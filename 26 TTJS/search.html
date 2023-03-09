@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+      
+    <p class="para" id="paraid">This will take you to the prev page.. may be not!!!</p>
+
+    <button class="btn" onclick="changeContent()">Click Me Babe</button>
+
+    <script>
+        // function changeContent() {
+        //     document.getElementsByClassName('para').innerHTML = "Welcome to Mondeep's Empire";
+        // }
+        const changeContent = () => {
+            // document.getElementById('paraid').innerHTML = "Welcome to Mondeep's Empire";
+
+            const changeHeading = document.getElementById('paraid');
+            changeHeading.innerHTML = "Welcome to Mondeep's Empire";
+        }
+    </script>
+</body>
+</html>
