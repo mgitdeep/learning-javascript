@@ -610,6 +610,9 @@ fourthWay.addEventListener('click', () => {
     console.log("I love this way of writing")
 })
 
+// Just making some changes
+
+
 
 
 
