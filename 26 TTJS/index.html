@@ -13,7 +13,23 @@
   <div>
     <h1 class="hone">Playing with JS</h1>
   </div>
-  <div>
+  <p id="showMyname" class="para"></p>
+  <br>
+  <button id="btn" class="btn">Click Here!</button>
+
+  <script>
+    const getName = document.getElementById('showMyname')
+    const getBtn = document.getElementById('btn')
+
+    const showNamefunc = () => {
+      showMyname.innerHTML = "Loading... 🚀 "
+      setTimeout(() => {
+        showMyname.innerHTML = "Building the empire 🔥🔥🔥"
+      }, 1000)
+    }
+    getBtn.addEventListener('click', showNamefunc)
+  </script>
+  <!-- <div>
     <body>
       <div>
           <div>
@@ -21,7 +37,7 @@
               <input type= "text" id="ice">
               <br>
               <label class="para">Choose an ice cream flavor
-                  <!-- <select id="iceCreams" name="iceCreams" onchange= "selectElement()")> -->
+                  <select id="iceCreams" name="iceCreams" onchange= "selectElement()")>
                   <select id="iceCreams" name="iceCreams")>
                     <option value= "Select One">Select One</option>
                     <option value= "chocolate" >Chocolate</option>
@@ -46,7 +62,7 @@
           result.innerHTML = `Mr. ${inputChange} select ${iceCreams} ice-cream flavour!`
           console.log(`${inputChange} and ${iceCreams}`)
         })
-    </script>
+    </script> -->
  
 
     <!-- <input type="text" id="inputt" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()">
@@ -95,7 +111,7 @@
         console.log("Mondeep's Empire is near")
       }
     </script> -->
-  </div>
+  <!-- </div> -->
   
 </body>
 </html>
