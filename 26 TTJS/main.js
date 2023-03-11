@@ -591,32 +591,48 @@
 // 3: using Inline events (HTML onclick="" property and element.onclick)
 // 4: using Event Listeners (addEventListener and IE's attachEvent)
 
-const thirdWay = document.getElementById('thirdway');
-thirdWay.onclick = function() {
-    alert('most common way of writing functions again');
-}
+// const thirdWay = document.getElementById('thirdway');
+// thirdWay.onclick = function() {
+//     alert('most common way of writing functions again');
+// }
 
-thirdWay.onclick = function() {
-    console.log('most common way of writing functions again');
-}
+// thirdWay.onclick = function() {
+//     console.log('most common way of writing functions again');
+// }
 
 
-const fourthWay = document.getElementById('fourthWay');
-fourthWay.addEventListener('click', () => {
-    alert("I love this way of writing")
-})
+// const fourthWay = document.getElementById('fourthWay');
+// fourthWay.addEventListener('click', () => {
+//     alert("I love this way of writing")
+// })
 
-fourthWay.addEventListener('click', () => {
-    console.log("I love this way of writing")
-})
+// fourthWay.addEventListener('click', () => {
+//     console.log("I love this way of writing")
+// })
 
 // Just making some changes
 
 
 
+// const CheckEvent = () => {
+//     getElement = document.getElementById('btnn')
+//     getElement.addEventListener('click', () => {
+//         console.log("Mondeep's Empire is near")
+//         alert("Mondeep's Empire is near");
+//         console.log(getElement);
+//         console.log(CheckEvent);
+//     })
+// }
 
-
-
-
+const getElement = document.getElementById('btnn')
+    getElement.addEventListener('click', () => {
+        console.log("Mondeep's Empire is near");
+        alert("Mondeep's Empire is near");
+        console.log(getElement);
+        console.log(event);
+        console.log(event.target);
+        console.log(event.type);
+        // console.log(CheckEvent);
+    })
 
 
