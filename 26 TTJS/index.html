@@ -12,12 +12,21 @@
 
   <div>
     <h1 class="hone">Playing with JS</h1>
+  
+    <p id="showMyname" class="para">Here the Try it button will give alert after 3 secs. If you don't want the alert then click Stop it!</p>
+    <br>
+    <button id="btn" class="btn" onclick="setTimefunc = (myFunc, 3000)">Click Here!</button>
+    <button id="btn" class="btn" onclick="clearTimeout(setTimefunc)">Stop it!</button>
+
   </div>
-  <p id="showMyname" class="para"></p>
-  <br>
-  <button id="btn" class="btn">Click Here!</button>
 
   <script>
+    function myFunc() {
+      alert('You have fired the click event!')
+    }
+  </script>
+
+  <!-- <script>
     const getName = document.getElementById('showMyname')
     const getBtn = document.getElementById('btn')
 
@@ -28,7 +37,7 @@
       }, 1000)
     }
     getBtn.addEventListener('click', showNamefunc)
-  </script>
+  </script> -->
   <!-- <div>
     <body>
       <div>
