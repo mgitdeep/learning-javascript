@@ -624,15 +624,19 @@
 //     })
 // }
 
-const getElement = document.getElementById('btnn')
-    getElement.addEventListener('click', () => {
-        console.log("Mondeep's Empire is near");
-        alert("Mondeep's Empire is near");
-        console.log(getElement);
-        console.log(event);
-        console.log(event.target);
-        console.log(event.type);
-        // console.log(CheckEvent);
-    })
+// const getElement = document.getElementById('btnn')
+//     getElement.addEventListener('click', () => {
+//         console.log("Mondeep's Empire is near");
+//         alert("Mondeep's Empire is near");
+//         console.log(getElement);
+//         console.log(event);
+//         console.log(event.target);
+//         console.log(event.type);
+//         // console.log(CheckEvent);
+//     })
 
+// section 2: What is Event Object?
+// Event object is the parent object of the event object. 
+// for Example 
+// MouseEvent, focusEvent, KeyboardEvent etc 
 

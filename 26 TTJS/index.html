@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <script defer src="main.js"></script>
+  <link rel="stylesheet" href="/main.css">
 </head>
 <body>
 
@@ -13,9 +14,47 @@
     <h1 class="hone">Playing with JS</h1>
   </div>
   <div>
-    <p>Let's keep exploring JS and feed the beast inside</p>
+
+    <input type="text" id="inputt" onkeypress="keyPress()" onkeydown="keyDown()" onkeyup="keyUp()">
+    <p id="paraid" class="para"></p>
+
+    <script>
+      const keyPress = () => {
+        document.getElementById('paraid').innerHTML = `You pressed ${event.key} and it's code is ${event.code}`
+      }
+      const keyDown = () => {
+        document.getElementById('paraid').innerHTML = `You pressed ${event.key} and it's code is ${event.code}`
+      }
+      const keyUp = () => {
+        document.getElementById('paraid').innerHTML = `You pressed ${event.key} and it's code is ${event.code}`
+      }
+    </script>
+    <!-- <p id="paraid" onmousedown="mouseDown()" onmouseup="mouseUp()" class="para"> -->
+    <!-- <p id="paraid" class="para">
+      Let's keep exploring JS and feed the beast inside
+    </p>
+
+    <script>
+      function mouseDown() {
+        document.getElementById('paraid').style.color = "yellow"
+      }
+    
+      function mouseUp() {
+        document.getElementById('paraid').style.color = "red"
+      }
+
+      const mDown = document.getElementById('paraid')
+      mDown.addEventListener('mousedown', () => {
+        mDown.style.color = "red"
+      })
+
+      const mUp = document.getElementById('paraid')
+      mUp.addEventListener('mouseup', () => {
+        mUp.style.color = "yellow"
+      })
+    </script> -->
     <!-- <button id="btnn" onclick="CheckEvent()">Exp Hub</button> -->
-    <button id="btnn">Exp Hub</button>
+    <!-- <button id="btnn">Exp Hub</button> -->
 
     <!-- <script>
       const CheckEvent = () => {
