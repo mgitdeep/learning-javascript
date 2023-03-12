@@ -12,11 +12,44 @@
 
   <div>
     <h1 class="hone">Playing with JS</h1>
+
+    <p id="paraid" class="para">Can you stop the countdown at 9?</p>
+
+    <button id="btnid1" class="btn">Start Here!</button>
+    <button id="btnid2" class="btn">Stop Here!</button>
+
+  </div>
+
+  <script>
+    const getPara = document.getElementById('paraid');
+    const getBtn1 = document.getElementById('btnid1');
+    const getBtn2 = document.getElementById('btnid2');
+    let num = 0;
+    let timeref;
+
+    const startCountdown = () => {
+      getPara.innerHTML = "Loading... ⏱";
+
+      timeref = setInterval(() => {
+        getPara.innerHTML = `${num}`;
+        num++;
+      }, 1000)
+    }
+
+    const stopCountdown = () => {
+      clearInterval(timeref)
+    }
+
+    getBtn1.addEventListener('click', startCountdown);
+
+    getBtn2.addEventListener('click', stopCountdown);
+  </script>
   
-    <p id="showMyname" class="para">Here the Try it button will give alert after 3 secs. If you don't want the alert then click Stop it!</p>
+    <!-- <p id="showMyname" class="para">Here the Try it button will give alert after 3 secs. If you don't want the alert then click Stop it!</p>
     <br>
-    <button id="btn" class="btn" onclick="setTimefunc = (myFunc, 3000)">Click Here!</button>
-    <button id="btn" class="btn" onclick="clearTimeout(setTimefunc)">Stop it!</button>
+    <button id="btn" class="btn" onclick="setTime = setTimeout(myFunc, 3000)">Click Here!</button>
+
+    <button id="btn" class="btn" onclick="clearTimeout(setTime)">Stop it!</button>
 
   </div>
 
@@ -24,7 +57,7 @@
     function myFunc() {
       alert('You have fired the click event!')
     }
-  </script>
+  </script> -->
 
   <!-- <script>
     const getName = document.getElementById('showMyname')
