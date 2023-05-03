@@ -1,0 +1,25 @@
+<script>
+
+    // Promise Produce
+    const promiseObject = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            let roll_nos = [1,2,3,4,5,6]
+            resolve(roll_nos)
+            // console.log(roll_nos)
+            // reject('Error while communicating with API')
+        }, 2000)
+    })
+
+
+    // Fetching data with Async Await
+    async function getData() {
+        const rollNoData = await promiseObject;
+        console.log(rollNoData)
+
+        return rollNoData;
+    }
+
+    const dataIsHere = getData()
+    console.log(dataIsHere)
+    
+</script>
