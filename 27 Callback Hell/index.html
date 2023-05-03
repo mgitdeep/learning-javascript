@@ -1,0 +1,40 @@
+<!-- /* The Task:
+From API get the following data
+
+1. 2s - student roll no
+2. 2s - get name and age
+3. 2s - get gender
+
+*/ -->
+<script>
+
+const getStudentInfo = () => {
+    setTimeout(() => {
+        console.log('API getting the Roll Nos')
+        let roll_nos = [1,2,3,4,5]
+        console.log(roll_nos)
+
+        setTimeout((rollNo) => {
+            const bioData = {
+                name: "Deep",
+                age: 23
+            }
+            console.log(`The name of the student is ${bioData.name}, bearing Roll no ${rollNo}, who is ${bioData.age} years old!`)
+
+            setTimeout((name) => {
+                bioData.gender = 'male'
+                console.log(`The name of the student is ${name}, bearing Roll no ${rollNo}, who is ${bioData.age} years old and he is an Alpha ${bioData.gender}`)
+
+            }, 2000, bioData.name)
+
+        }, 2000, roll_nos[1])
+
+    }, 2000)
+}
+
+getStudentInfo()
+
+// SetTimeout Syntax - we've used the "argument" parameter for the first time
+// setTimeout(handler: TimerHandler, timeout?: number, ...arguments: any[]): number)
+
+</script>
